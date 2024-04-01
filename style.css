@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+textarea,
+button,
+select {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background-color: #1992D4;
+    padding: 30px;
+}
+
+.sidebar__logo {
+    display: flex;
+    gap: 20px;
+    color: white;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+
+.sidebar__logo img {
+    height: 36px;
+    filter: invert(100%);
+}
+
+.sidebar__nav ul {
+    list-style-type: none;
+    margin-left: 8px;
+}
+
+.sidebar__nav:last-child {
+    margin-top: 60px;
+}
+
+
+
+.sidebar__elem {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 550;
+
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar__elem img {
+    height: 25px;
+    filter: invert(100%);
+}
+
+/* HEADER */
+
+.header {
+    padding: 17px 5% 38px 4%;
+
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    gap: 11%;
+    margin-bottom: 35px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.header__search-img {
+    height: 20px;
+}
+
+.header__search-input {
+    border: none;
+    background-color: #E2E8F0;
+    border-radius: 40vh;
+    padding: 5px 10px;
+    width: 200px;
+    outline: none;
+    height: 30px;
+    flex: 1 1 auto;
+}
+
+.header__profile {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 30px;
+}
+
+.avatar {
+    height: 48px;
+    border-radius: 50vh;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8%;
+}
+
+.header__greeting {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.header__big-avatar {
+    height: 70px;
+    border-radius: 50vh;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 550;
+}
+
+.header__username {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header__buttons {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header__btn {
+    border-radius: 40vh;
+    background-color: #1992D4;
+    color: white;
+    padding: 10px 23px;
+
+}
