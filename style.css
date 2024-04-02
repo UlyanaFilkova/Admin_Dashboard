@@ -55,6 +55,10 @@ button {
 
 }
 
+.light-shadow {
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
 /* SIDEBAR */
 .sidebar {
     grid-row: 1/3;
@@ -109,7 +113,7 @@ button {
 .header {
     grid-row: 1/2;
     padding: 17px 5% 38px 4%;
-
+    z-index: 1;
 }
 
 .header__top {
