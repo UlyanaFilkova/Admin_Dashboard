@@ -145,6 +145,10 @@ button {
     flex: 1 1 auto;
 }
 
+.header__search-input:focus{
+    border: 1px solid #adb2b8;
+}
+
 .header__profile {
     display: flex;
     align-items: center;
@@ -277,8 +281,18 @@ button {
     gap: 30px;
 }
 
-.article__options svg {
+.article__btn svg {
     height: 20px;
+    stroke: black;
+}
+
+.article__btn-star.active svg {
+    stroke: #F0B429;
+    fill: #fff945;
+}
+
+.article__btn-git{
+    
 }
 
 /* ANNOUNCEMENTS */
