@@ -46,3 +46,11 @@ button.addEventListener('click', function () {
     }
 
 });
+
+
+var emptyLinks = document.querySelectorAll('a[href=""]');
+emptyLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+    });
+});

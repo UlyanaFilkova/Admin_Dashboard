@@ -145,7 +145,7 @@ button {
     flex: 1 1 auto;
 }
 
-.header__search-input:focus{
+.header__search-input:focus {
     border: 1px solid #adb2b8;
 }
 
@@ -291,9 +291,7 @@ button {
     fill: #fff945;
 }
 
-.article__btn-git{
-    
-}
+.article__btn-git {}
 
 /* ANNOUNCEMENTS */
 .announcements {
