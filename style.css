@@ -46,10 +46,21 @@ button {
     outline: none;
 }
 
+/* CONTAINER */
+.container {
+    display: grid;
+    /* grid-template-columns: min(23%, 300px) auto; */
+    grid-template-columns: clamp(200px, 250px, 23%) auto;
+    grid-template-rows: auto auto;
+
+}
+
 /* SIDEBAR */
 .sidebar {
+    grid-row: 1/3;
     background-color: #1992D4;
-    padding: 30px;
+    padding: 10%;
+    min-height: 100vh;
 }
 
 .sidebar__logo {
@@ -76,13 +87,11 @@ button {
     margin-top: 60px;
 }
 
-
-
 .sidebar__elem {
     display: flex;
     gap: 25px;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     font-weight: 550;
 
@@ -98,6 +107,7 @@ button {
 /* HEADER */
 
 .header {
+    grid-row: 1/2;
     padding: 17px 5% 38px 4%;
 
 }
@@ -179,6 +189,7 @@ button {
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .header__btn {
@@ -186,5 +197,76 @@ button {
     background-color: #1992D4;
     color: white;
     padding: 10px 23px;
+    font-weight: 600;
+    font-size: 16px;
+}
 
+/* MAIN */
+
+.main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 20px;
+    column-gap: 40px;
+    background-color: #E2E8F0;
+
+    padding: 35px 30px 60px 20px;
+}
+
+/* ARTICLE */
+
+.article {}
+
+.article__h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.article__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-auto-rows: 1fr;
+    row-gap: 30px;
+    column-gap: 25px;
+}
+
+.article__card {
+    background-color: #fff;
+    padding: 30px 30px 20px 20px;
+    border-radius: 8px;
+    border-left: #F0B429 8px solid;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.article__h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.article__description {
+    font-size: 12px;
+    color: #636363;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    max-width: max(80%, 350px);
+}
+
+
+.article__options {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+}
+
+.article__options svg {
+    height: 20px;
 }
