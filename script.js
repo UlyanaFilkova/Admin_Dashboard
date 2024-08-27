@@ -1,4 +1,4 @@
-var buttons = document.querySelectorAll('.article__btn-star');
+let buttons = document.querySelectorAll('.article__btn-star');
 
 buttons.forEach(function (button) {
     button.addEventListener('click', function () {
@@ -34,7 +34,7 @@ buttons.forEach(function (button) {
     });
 });
 
-var button = document.querySelector('.header__notifications');
+let button = document.querySelector('.header__notifications');
 button.addEventListener('click', function () {
     button.classList.toggle('active');
     if (button.classList.contains('active')) {
@@ -48,9 +48,16 @@ button.addEventListener('click', function () {
 });
 
 
-var emptyLinks = document.querySelectorAll('a[href=""]');
+let emptyLinks = document.querySelectorAll('a[href=""]');
 emptyLinks.forEach(link => {
     link.addEventListener('click', event => {
         event.preventDefault();
     });
+});
+
+const burgerButton = document.querySelector('.header__burger-button');
+const sidebar = document.querySelector('.sidebar');
+
+burgerButton.addEventListener('click', () => {
+  sidebar.classList.toggle('toggle');
 });
