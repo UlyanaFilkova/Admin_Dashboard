@@ -84,10 +84,6 @@ button {
   transition: transform 0.3s ease;
 }
 
-.sidebar.toggle {
-  transform: translateX(-100%);
-}
-
 .sidebar__logo {
   display: flex;
   gap: 20px;
@@ -476,10 +472,10 @@ button {
 }
 
 @media (max-width: 735px) {
-  /* .header__burger-button {
+  .header__burger-button {
     display: block;
     transform: translateY(3px);
-  } */
+  }
 
   .container {
     grid-template-columns: auto;
@@ -496,7 +492,32 @@ button {
   }
   .sidebar {
     position: absolute;
+    top: 50px;
+    left: -10px;
+    transform: translateX(-100%);
+  }
+  .sidebar__logo {
     display: none;
+  }
+  .header__profile p {
+    display: none;
+  }
+}
+.sidebar.toggle {
+  display: block;
+
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  /* transform: translateX(-100%); */
+}
+
+@media (max-width: 550px) {
+  .announcements {
+    width: 100%;
+  }
+  .trending {
+    width: 100%;
   }
 }
 
