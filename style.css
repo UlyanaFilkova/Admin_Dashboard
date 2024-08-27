@@ -139,7 +139,8 @@ button {
 .header__top {
   display: flex;
   align-items: center;
-  gap: 11%;
+  justify-content: space-between;
+  gap: 5%;
 }
 .header__burger-button {
   display: none;
@@ -157,7 +158,7 @@ button {
 .header__search {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 5%;
   flex-grow: 1;
 }
 
@@ -170,7 +171,7 @@ button {
   background-color: #e2e8f0;
   border-radius: 40vh;
   padding: 5px 10px;
-  width: 200px;
+  width: 40vw;
   outline: none;
   height: 30px;
   flex: 1 1 auto;
@@ -185,7 +186,7 @@ button {
   align-items: center;
   font-size: 16px;
   font-weight: 600;
-  gap: 30px;
+  gap: 3vw;
 }
 
 .avatar {
@@ -469,6 +470,9 @@ button {
     padding: 6px 16px;
     font-size: 12px;
   }
+  .header__profile p {
+    display: none;
+  }
 }
 
 @media (max-width: 735px) {
@@ -499,9 +503,7 @@ button {
   .sidebar__logo {
     display: none;
   }
-  .header__profile p {
-    display: none;
-  }
+  
 }
 .sidebar.toggle {
   display: block;
